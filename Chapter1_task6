@@ -1,0 +1,20 @@
+// Написать программу перевода расстояния из километров и метров в мили и футы. 
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "RUSSIAN");
+	double distkm, distm, distmile, distfoot;
+	cout << "Введите расстояние в формате: километры и метры: " << "  " << endl;
+	cin >> distkm >> distm;
+	distm = (distkm * 1000) + distm;
+	distmile = distm / 1609.34;
+	distfoot = distm * 3.28;
+	cout << distmile << " миль" << distfoot << " футов" << endl;
+
+	return 0;
+}
