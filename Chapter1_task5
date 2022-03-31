@@ -1,0 +1,14 @@
+// Написать программу для перевода километров в мили.
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+	double distkm; // переменная для километров
+	cin >> distkm;
+	cout << distkm * 0.621 << endl;
+
+	return 0;
+}
