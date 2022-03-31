@@ -1,0 +1,17 @@
+// Написать программу, которая переводит расстояние, указанное в саженях (1 сажень равняется 2,16 метрам), в метры. 
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+	int s;
+	double m;
+	cin >> s;
+	m = s / 2.16;
+	cout << m;
+
+
+	return 0;
+}
