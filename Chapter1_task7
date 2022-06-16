@@ -1,17 +1,24 @@
-// Написать программу, которая переводит расстояние, указанное в саженях (1 сажень равняется 2,16 метрам), в метры. 
-
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
 
 int main() {
-	int s;
-	double m;
-	cin >> s;
-	m = s / 2.16;
-	cout << m;
-
+	// Напишите программу для перевода расстояния, указанного в саженях и аршинах 
+	//(1 сажень равняется 2,16 метра, а 3 аршина равны 1 сажени), 
+	//в метры и сантиметры (в 1 метре 100 сантиметров)
+	setlocale(LC_ALL, "RUSSIAN");
+	double sazhen, arshin, sum_old, sum_new;
+	int meter, inch;
+	cout << "Введите расстояние в саженях и аршинах." << endl;
+	cin >> sazhen;
+	cout << "... саженей\n";
+	cin >> arshin;
+	cout << "... аршин\n";
+	sum_old = sazhen + (arshin * 0.33);
+	sum_new = sum_old * 2.16;
+	meter = sum_new;
+	inch = (sum_new - meter) * 100;
+	cout << "Получилось " << meter << " метров и " << inch << " сантиметров\n";
 
 	return 0;
 }
