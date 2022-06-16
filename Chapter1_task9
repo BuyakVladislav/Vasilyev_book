@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+// Напишите программу с функцией для перевода скорости, указанной в км/ч в м/с.
+int main() {
+	setlocale(LC_ALL, "RUSSIAN");
+	cout << "Введите скорость в км/ч\n";
+	double speed_km, speed_meter;
+	cin >> speed_km;
+	cout << "Скорость равна " << speed_km << " км/ч\n";
+	speed_meter = (speed_km * 1000) / 3600;
+	cout << "Ваша скорость в м/с равна: " << speed_meter;
+
+	return 0;
+}
