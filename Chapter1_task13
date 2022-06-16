@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+// Напишите программу с функцией для вычисления суммы нечетных натуральных чисел
+
+
+void func(int a, int b) {
+
+	if (a % 2 == 0 || b % 2 == 0) {
+		cout << "Числа четные\n";
+	}
+	else {
+		cout << "Сумма введенных вами чисел равна: " << a + b << endl;
+	}
+	
+	
+}
+int main() {
+	setlocale(LC_ALL, "RUSSIAN");
+	cout << "Введите два натуральных числа\n";
+	int x, y;
+	cin >> x >> y;
+	func (x, y);
+	return 0;
+}
