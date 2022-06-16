@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+// Напишите программу с функцией для вычисления суммы натуральных чисел
+
+
+int func(int a, int b) {
+	int sum = a + b;
+	return sum;
+}
+int main() {
+	setlocale(LC_ALL, "RUSSIAN");
+	cout << "Введите два натуральных числа\n";
+	int x, y;
+	cin >> x >> y;
+	cout << "Сумма введенных вами чисел равна: " << func(x, y) << endl;
+	return 0;
+}
